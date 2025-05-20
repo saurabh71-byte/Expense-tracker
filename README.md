@@ -21,5 +21,11 @@ Console-based interface
 
 # Screenshot 1: Program Start
 Description: Show the welcome screen and main menu.
+
+
+
 ![Screenshot 2025-05-20 162010](https://github.com/user-attachments/assets/cf6071cb-6c07-4a29-a0a7-45b0ac93f593)
+
+
+ Explain: "This is the starting menu of the Expense Tracker. Users can add income, expenses, view monthly summaries, or save data."
 
