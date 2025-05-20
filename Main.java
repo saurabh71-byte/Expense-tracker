@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Main {
 
-    // Transaction class to hold each record
+   
     static class Transaction {
         enum Type { INCOME, EXPENSE }
         Type type;
@@ -26,7 +26,7 @@ public class Main {
         }
 
         static Transaction fromString(String line) {
-            // Format: TYPE,CATEGORY,AMOUNT,DATE (yyyy-MM-dd)
+
             String[] parts = line.split(",");
             if (parts.length != 4) return null;
             Type type = Type.valueOf(parts[0]);
@@ -40,14 +40,14 @@ public class Main {
     static List<Transaction> transactions = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
-    // Predefined categories (you can expand)
+   
     static final List<String> incomeCategories = Arrays.asList("Salary", "Business", "Interest", "Other");
     static final List<String> expenseCategories = Arrays.asList("Food", "Rent", "Travel", "Entertainment", "Other");
 
     public static void main(String[] args) {
         System.out.println("Welcome to Expense Tracker");
 
-        // Load data if file provided as argument
+
         if (args.length > 0) {
             loadFromFile(args[0]);
         }
